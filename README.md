@@ -8,28 +8,24 @@ This archive is distributed in association with the [INFORMS Journal on Computin
 
 The software and data in this repository are a snapshot of the software and data that were used in the research reported on in the paper.
 
-**Important: This code is being developed on an on-going basis at 
-https://github.com/tkralphs/JoCTemplate. Please go there if you would like to
-get a more recent version or would like support**
-
 ## Cite
 
 To cite the contents of this repository, please cite both the paper and this repo, using their respective DOIs.
 
-https://doi.org/10.1287/ijoc.2019.0000
+https://doi.org/10.1287/ijoc.2022.0207
 
-https://doi.org/10.1287/ijoc.2019.0000.cd
+https://doi.org/10.1287/ijoc.2022.0207.cd
 
 Below is the BibTex for citing this snapshot of the respoitory.
 
 ```
 @article{CacheTest,
-  author =        {T. Ralphs},
+  author =        {Ajayi, Temitayo and Hosseinian, Seyedmohammadhossein and Schaefer, Andrew J. and Fuller, Clifton D.},
   publisher =     {INFORMS Journal on Computing},
-  title =         {{CacheTest}},
-  year =          {2020},
-  doi =           {10.1287/ijoc.2019.0000.cd},
-  url =           {https://github.com/INFORMSJoC/2019.0000},
+  title =         {Combination Chemotherapy Optimization with Discrete Dosing},
+  year =          {2023},
+  doi =           {10.1287/ijoc.2022.0207.cd},
+  url =           {https://github.com/INFORMSJoC/2022.0207},
 }  
 ```
 
