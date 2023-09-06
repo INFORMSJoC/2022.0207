@@ -1,14 +1,10 @@
-#  ___________________________________________________________________________________________________________
-# |                                                                                                           |
-# |                       Combination Chemotherapy Optimization with Discrete Dosing                          |
-# |                                                                                                           |
-# |           Temitayo Ajayi, Seyedmohammadhossein Hosseinian, Andrew J. Schaefer, Clifton D. Fuller          |
-# |___________________________________________________________________________________________________________|
-
-
-# # Tumor growth under chemotherapy
-
+# Combination Chemotherapy Optimization with Discrete Dosing
+# Temitayo Ajayi, Seyedmohammadhossein Hosseinian, Andrew J. Schaefer, Clifton D. Fuller
 #
+# _______________________________
+# Tumor growth under chemotherapy
+# _______________________________
+
 
 
 import math
