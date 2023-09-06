@@ -1,14 +1,10 @@
-#  ___________________________________________________________________________________________________________
-# |                                                                                                           |
-# |                       Combination Chemotherapy Optimization with Discrete Dosing                          |
-# |                                                                                                           |
-# |           Temitayo Ajayi, Seyedmohammadhossein Hosseinian, Andrew J. Schaefer, Clifton D. Fuller          |
-# |___________________________________________________________________________________________________________|
-
-
-# # Deterministic model with McCormick envelopes
-
+# Combination Chemotherapy Optimization with Discrete Dosing
+# Temitayo Ajayi, Seyedmohammadhossein Hosseinian, Andrew J. Schaefer, Clifton D. Fuller
 #
+# ____________________________________________
+# Deterministic model with McCormick envelopes
+# ____________________________________________
+
 
 
 from gurobipy import *
