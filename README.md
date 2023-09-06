@@ -57,7 +57,7 @@ All the necessary [data](data) for replicating the experiments is included withi
 
 ## Requirements
 
-Running the codes requires instalation of the Gurobi Optimization solver.
+Running the codes requires installation of the Gurobi Optimization solver.
 
 ## Support
 
