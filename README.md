@@ -39,7 +39,7 @@ The [scripts](scripts) folder contains Python implementation of the models discu
 
 - [Chemo_KillFactors.py](scripts/Chemo_KillFactors.py): Simulation model to estimate kill factor of cytotoxic drugs based on Partial Response Rate (PRR) in clinical trials.
 
-- [Chemo_SensitivityAnalysis.py](scripts/Chemo_SensitivityAnalysis.py): Sensitivity analysis of the deterministic model with respect to kill factor of cytotoxic drugs on tumor cells (*sen_killEffect*), temporal resistance of cytotoxic drugs (*sen_temporalResist*), biological constant of cytotoxic drugs (*sen_bioConstant*), kill factor of cytotoxic drugs on white blood cells (*sen_wbcKill*), maximum daily permissible administration dose for cytotoxic drugs (*sen_maxAdmin*), and minimum permissible level of Neutrophil (*sen_NeutrophilFloor*) parameters. The type of sensitivity analysis is determined through the *sensitivityType* variable, e.g., *sensitivityType* = *'sen_NeutrophilFloor'*.
+- [Chemo_SensitivityAnalysis.py](scripts/Chemo_SensitivityAnalysis.py): Sensitivity analysis of the deterministic model with respect to kill effect of cytotoxic drugs on tumor cells (*sen_killEffect*), temporal resistance of cytotoxic drugs (*sen_temporalResist*), biological constant of cytotoxic drugs (*sen_bioConstant*), kill effect of cytotoxic drugs on white blood cells (*sen_wbcKill*), maximum daily permissible administration dose for cytotoxic drugs (*sen_maxAdmin*), and minimum permissible level of Neutrophil (*sen_NeutrophilFloor*) parameters. The type of sensitivity analysis is determined through the *sensitivityType* variable, e.g., *sensitivityType* = *'sen_NeutrophilFloor'*.
 
 - [Chemo_Simulation.py](scripts/Chemo_Simulation.py): Simulation of the regularized optimal treatment plan.
 
