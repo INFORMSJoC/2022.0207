@@ -1,14 +1,10 @@
-#  ___________________________________________________________________________________________________________
-# |                                                                                                           |
-# |                       Combination Chemotherapy Optimization with Discrete Dosing                          |
-# |                                                                                                           |
-# |           Temitayo Ajayi, Seyedmohammadhossein Hosseinian, Andrew J. Schaefer, Clifton D. Fuller          |
-# |___________________________________________________________________________________________________________|
-
-
-# # Stochastic model
-
+# Combination Chemotherapy Optimization with Discrete Dosing
+# Temitayo Ajayi, Seyedmohammadhossein Hosseinian, Andrew J. Schaefer, Clifton D. Fuller
 #
+# ________________
+# Stochastic model
+# ________________
+
 
 
 from gurobipy import *
