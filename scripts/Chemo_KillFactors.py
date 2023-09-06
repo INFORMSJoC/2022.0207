@@ -1,14 +1,10 @@
-#  ___________________________________________________________________________________________________________
-# |                                                                                                           |
-# |                       Combination Chemotherapy Optimization with Discrete Dosing                          |
-# |                                                                                                           |
-# |           Temitayo Ajayi, Seyedmohammadhossein Hosseinian, Andrew J. Schaefer, Clifton D. Fuller          |
-# |___________________________________________________________________________________________________________|
-
-
-# # Estimating kill factors based on Partial Response Rate (PRR) in clinical trials
-
+# Combination Chemotherapy Optimization with Discrete Dosing
+# Temitayo Ajayi, Seyedmohammadhossein Hosseinian, Andrew J. Schaefer, Clifton D. Fuller
 #
+# _______________________________________________________________________________
+# Estimating kill factors based on Partial Response Rate (PRR) in clinical trials
+# _______________________________________________________________________________
+
 
 
 from gurobipy import *
