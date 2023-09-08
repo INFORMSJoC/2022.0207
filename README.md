@@ -1,106 +1,64 @@
 [![INFORMS Journal on Computing Logo](https://INFORMSJoC.github.io/logos/INFORMS_Journal_on_Computing_Header.jpg)](https://pubsonline.informs.org/journal/ijoc)
 
-# CacheTest
+# Combination Chemotherapy Optimization with Discrete Dosing
 
-This archive is distributed in association with the [INFORMS Journal on
-Computing](https://pubsonline.informs.org/journal/ijoc) under the [MIT License](LICENSE).
+This repository contains supporting material for the paper *Combination Chemotherapy Optimization with Discrete Dosing* by Temitayo Ajayi, Seyedmohammadhossein Hosseinian, Andrew J. Schaefer, and Clifton D. Fuller.
 
-The software and data in this repository are a snapshot of the software and data
-that were used in the research reported on in the paper 
-[This is a Template](https://doi.org/10.1287/ijoc.2019.0000) by T. Ralphs. 
-The snapshot is based on 
-[this SHA](https://github.com/tkralphs/JoCTemplate/commit/f7f30c63adbcb0811e5a133e1def696b74f3ba15) 
-in the development repository. 
+This archive is distributed in association with the [INFORMS Journal on Computing](https://pubsonline.informs.org/journal/ijoc) under the [MIT License](LICENSE).
 
-**Important: This code is being developed on an on-going basis at 
-https://github.com/tkralphs/JoCTemplate. Please go there if you would like to
-get a more recent version or would like support**
+The software and data in this repository are a snapshot of the software and data that were used in the research reported on in the paper.
 
 ## Cite
 
 To cite the contents of this repository, please cite both the paper and this repo, using their respective DOIs.
 
-https://doi.org/10.1287/ijoc.2019.0000
+https://doi.org/10.1287/ijoc.2022.0207
 
-https://doi.org/10.1287/ijoc.2019.0000.cd
+https://doi.org/10.1287/ijoc.2022.0207.cd
 
 Below is the BibTex for citing this snapshot of the respoitory.
 
 ```
 @article{CacheTest,
-  author =        {T. Ralphs},
+  author =        {Ajayi, Temitayo and Hosseinian, Seyedmohammadhossein and Schaefer, Andrew J. and Fuller, Clifton D.},
   publisher =     {INFORMS Journal on Computing},
-  title =         {{CacheTest}},
-  year =          {2020},
-  doi =           {10.1287/ijoc.2019.0000.cd},
-  url =           {https://github.com/INFORMSJoC/2019.0000},
+  title =         {Combination Chemotherapy Optimization with Discrete Dosing},
+  year =          {2023},
+  doi =           {10.1287/ijoc.2022.0207.cd},
+  url =           {https://github.com/INFORMSJoC/2022.0207},
 }  
 ```
 
-## Description
+## Content
 
-The goal of this software is to demonstrate the effect of cache optimization.
+The [scripts](scripts) folder contains Python implementation of the models discussed in the paper.
 
-## Building
+- [Chemo_Deterministic.py](scripts/Chemo_Deterministic.py): Deterministic combination chemotherapy optimization model that employs a discrete linearization technique to approximate bilinear terms.
 
-In Linux, to build the version that multiplies all elements of a vector by a
-constant (used to obtain the results in [Figure 1](results/mult-test.png) in the
-paper), stepping K elements at a time, execute the following commands.
+- [Chemo_Deterministic_McCormick.py](scripts/Chemo_Deterministic_McCormick.py): Deterministic combination chemotherapy optimization model that employs McCormick envelopes of bilinear terms.
 
-```
-make mult
-```
+- [Chemo_KillFactors.py](scripts/Chemo_KillFactors.py): Simulation model to estimate kill factor of cytotoxic drugs based on Partial Response Rate (PRR) in clinical trials.
 
-Alternatively, to build the version that sums the elements of a vector (used
-to obtain the results [Figure 2](results/sum-test.png) in the paper), stepping K
-elements at a time, do the following.
+- [Chemo_SensitivityAnalysis.py](scripts/Chemo_SensitivityAnalysis.py): Sensitivity analysis of the deterministic model with respect to kill effect of cytotoxic drugs on tumor cells (*sen_killEffect*), temporal resistance of tumor cells to cytotoxic drugs (*sen_temporalResist*), elimination rate of cytotoxic drugs (*sen_bioConstant*), kill effect of cytotoxic drugs on white blood cells (*sen_wbcKill*), maximum daily permissible administration dose for cytotoxic drugs (*sen_maxAdmin*), and minimum permissible level of Neutrophil (*sen_NeutrophilFloor*) parameters. The type of sensitivity analysis is determined through the *sensitivityType* variable, e.g., *sensitivityType* = *'sen_NeutrophilFloor'*.
 
-```
-make clean
-make sum
-```
+- [Chemo_Simulation.py](scripts/Chemo_Simulation.py): Simulation of the regularized optimal treatment plan.
 
-Be sure to make clean before building a different version of the code.
+- [Chemo_Stochastic.py](scripts/Chemo_Stochastic.py): Stochastic (chance-constrained) combination chemotherapy optimization model with a tumor shrinkage-based objective.
 
-## Results
+- [Chemo_Stochastic_Alpha.py](scripts/Chemo_Stochastic_Alpha.py): Stochastic (chance-constrained) combination chemotherapy optimization model with a probability-based objective.
 
-Figure 1 in the paper shows the results of the multiplication test with different
-values of K using `gcc` 7.5 on an Ubuntu Linux box.
+- [Chemo_TumorGrowth_Natural.py](scripts/Chemo_TumorGrowth_Natural.py): Simulation model to compare tumor natural growth profile by the original Gompertzian function and its approximation.
 
-![Figure 1](results/mult-test.png)
+- [Chemo_TumorGrowth_Treatment.py](scripts/Chemo_TumorGrowth_Treatment.py): Simulation model to compare tumor shrinkage under the influence of cytotoxic drugs (optimal treatment plan) by the original Gompertzian function and its approximation.
 
-Figure 2 in the paper shows the results of the sum test with different
-values of K using `gcc` 7.5 on an Ubuntu Linux box.
+The [results](results) folder contains the model outputs. 
 
-![Figure 1](results/sum-test.png)
+All the necessary [data](data) for replicating the experiments is included within the scripts.
 
-## Replicating
+## Requirements
 
-To replicate the results in [Figure 1](results/mult-test), do either
-
-```
-make mult-test
-```
-or
-```
-python test.py mult
-```
-To replicate the results in [Figure 2](results/sum-test), do either
-
-```
-make sum-test
-```
-or
-```
-python test.py sum
-```
-
-## Ongoing Development
-
-This code is being developed on an on-going basis at the author's
-[Github site](https://github.com/tkralphs/JoCTemplate).
+Running the codes requires installation of the Gurobi Optimization solver.
 
 ## Support
 
-For support in using this software, submit an
-[issue](https://github.com/tkralphs/JoCTemplate/issues/new).
+For support in using the codes, please contact the corresponding author.
