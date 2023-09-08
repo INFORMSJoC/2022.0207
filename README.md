@@ -25,7 +25,7 @@ Below is the BibTex for citing this snapshot of the respoitory.
   title =         {Combination Chemotherapy Optimization with Discrete Dosing},
   year =          {2023},
   doi =           {10.1287/ijoc.2022.0207.cd},
-  url =           {https://github.com/INFORMSJoC/2022.0207},
+  note =           {https://github.com/INFORMSJoC/2022.0207},
 }  
 ```
 
