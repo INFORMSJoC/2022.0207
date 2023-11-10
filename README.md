@@ -2,7 +2,7 @@
 
 # Combination Chemotherapy Optimization with Discrete Dosing
 
-This repository contains supporting material for the paper *Combination Chemotherapy Optimization with Discrete Dosing* by Temitayo Ajayi, Seyedmohammadhossein Hosseinian, Andrew J. Schaefer, and Clifton D. Fuller.
+This repository contains supporting material for the paper [Combination Chemotherapy Optimization with Discrete Dosing](https://doi.org/10.1287/ijoc.2022.0207) by Temitayo Ajayi, Seyedmohammadhossein Hosseinian, Andrew J. Schaefer, and Clifton D. Fuller.
 
 This archive is distributed in association with the [INFORMS Journal on Computing](https://pubsonline.informs.org/journal/ijoc) under the [MIT License](LICENSE).
 
